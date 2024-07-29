@@ -1,0 +1,32 @@
+{
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-complete",
+      "version": "^0.0.16"
+    }
+  ],
+  "modules": [
+    {
+      "name": "mod-erm-usage",
+      "version": "latest"
+    },
+    {
+      "name": "mod-erm-usage-harvester",
+      "version": "latest"
+    },
+    {
+      "name": "mod-eusage-reports",
+      "version": "latest"
+    }
+  ],
+  "uiModules": [
+    {
+      "name": "folio_plugin-eusage-reports",
+      "version": "latest"
+    }
+  ]
+}
