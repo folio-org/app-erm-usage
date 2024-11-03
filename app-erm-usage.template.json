@@ -6,7 +6,7 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^0.0.16"
+      "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
@@ -26,6 +26,18 @@
   "uiModules": [
     {
       "name": "folio_plugin-eusage-reports",
+      "version": "latest"
+    },
+    {
+      "name": "folio_erm-comparisons",
+      "version": "latest"
+    },
+    {
+      "name": "folio_erm-usage",
+      "version": "latest"
+    },
+    {
+      "name": "folio_plugin-find-erm-usage-data-provider",
       "version": "latest"
     }
   ]
