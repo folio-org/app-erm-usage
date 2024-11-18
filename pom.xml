@@ -6,8 +6,8 @@
   <name>app-erm-usage</name>
   <artifactId>app-erm-usage</artifactId>
   <groupId>org.folio</groupId>
-  <description>Application for ERM Usage platform installation for Quesnelia</description>
-  <version>1.0.0-SNAPSHOT</version>
+  <description>Application for ERM Usage platform installation</description>
+  <version>2.0.0</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
