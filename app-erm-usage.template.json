@@ -6,7 +6,7 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^1.0.0-SNAPSHOT"
+      "version": "2.1.0-SNAPSHOT"
     },
     {
       "name": "app-acquisitions",
@@ -42,10 +42,6 @@
     },
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "latest"
-    },
-    {
-      "name": "folio_stripes-erm-components",
       "version": "latest"
     }
   ]
