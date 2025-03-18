@@ -16,11 +16,11 @@
   "modules": [
     {
       "name": "mod-erm-usage",
-      "version": "5.0.0"
+      "version": "5.1.0"
     },
     {
       "name": "mod-erm-usage-harvester",
-      "version": "5.0.2"
+      "version": "5.1.0"
     },
     {
       "name": "mod-eusage-reports",
@@ -30,19 +30,19 @@
   "uiModules": [
     {
       "name": "folio_plugin-eusage-reports",
-      "version": "3.2.0"
+      "version": "4.0.1"
     },
     {
       "name": "folio_erm-comparisons",
-      "version": "7.1.0"
+      "version": "8.0.0"
     },
     {
       "name": "folio_erm-usage",
-      "version": "10.0.1"
+      "version": "11.0.0"
     },
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "6.2.0"
+      "version": "7.0.0"
     }
   ]
 }
