@@ -43,10 +43,6 @@
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
       "version": "latest"
-    },
-    {
-      "name": "folio_stripes-erm-components",
-      "version": "latest"
     }
   ]
 }
