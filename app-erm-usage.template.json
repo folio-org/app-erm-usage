@@ -5,10 +5,6 @@
   "platform": "complete",
   "dependencies": [
     {
-      "name": "app-platform-complete",
-      "version": "2.1.0-SNAPSHOT"
-    },
-    {
       "name": "app-acquisitions",
       "version": "^1.0.0-SNAPSHOT"
     },
