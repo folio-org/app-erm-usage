@@ -15,7 +15,6 @@ Application descriptor repository for app-erm-usage.
 | Module name                                 |
 |:--------------------------------------------|
 | `folio_plugin-eusage-reports`               |
-| `folio_erm-comparisons`                     |
 | `folio_erm-usage`                           |
 | `folio_plugin-find-erm-usage-data-provider` |
 | `folio_stripes-erm-components`              |
