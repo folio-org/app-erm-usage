@@ -5,11 +5,11 @@
   "platform": "complete",
   "dependencies": [
     {
-      "name": "app-platform-complete",
+      "name": "app-acquisitions",
       "version": "^1.0.0-SNAPSHOT"
     },
     {
-      "name": "app-acquisitions",
+      "name": "app-agreements",
       "version": "^1.0.0-SNAPSHOT"
     }
   ],
@@ -33,19 +33,11 @@
       "version": "latest"
     },
     {
-      "name": "folio_erm-comparisons",
-      "version": "latest"
-    },
-    {
       "name": "folio_erm-usage",
       "version": "latest"
     },
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "latest"
-    },
-    {
-      "name": "folio_stripes-erm-components",
       "version": "latest"
     }
   ]
