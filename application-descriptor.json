@@ -1,6 +1,6 @@
 {
   "name": "app-erm-usage",
-  "version": "2.2.0-SNAPSHOT.100100000001577",
+  "version": "2.2.0-SNAPSHOT.100100000001578",
   "description": "Application for ERM Usage platform installation for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -20,7 +20,7 @@
     },
     {
       "name": "mod-erm-usage-harvester",
-      "version": "5.2.0-SNAPSHOT.203"
+      "version": "5.2.0-SNAPSHOT.204"
     },
     {
       "name": "mod-eusage-reports",
