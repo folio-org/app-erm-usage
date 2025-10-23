@@ -1,0 +1,52 @@
+{
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-acquisitions",
+      "version": "^1.2.0-SNAPSHOT",
+      "preRelease": "only"
+    },
+    {
+      "name": "app-agreements",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
+    }
+  ],
+  "modules": [
+    {
+      "name": "mod-erm-usage",
+        "version": "latest",
+        "preRelease": "only"
+    },
+    {
+      "name": "mod-erm-usage-harvester",
+        "version": "latest",
+        "preRelease": "only"
+    },
+    {
+      "name": "mod-eusage-reports",
+        "version": "latest",
+        "preRelease": "only"
+    }
+  ],
+  "uiModules": [
+    {
+      "name": "folio_plugin-eusage-reports",
+        "version": "latest",
+        "preRelease": "only"
+    },
+    {
+      "name": "folio_erm-usage",
+        "version": "latest",
+        "preRelease": "only"
+    },
+    {
+      "name": "folio_plugin-find-erm-usage-data-provider",
+        "version": "latest",
+        "preRelease": "only"
+    }
+  ]
+}
