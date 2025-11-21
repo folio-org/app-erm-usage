@@ -1,6 +1,6 @@
 {
   "name": "app-erm-usage",
-  "version": "2.2.0-SNAPSHOT.100200000001081",
+  "version": "2.2.0-SNAPSHOT.100200000001082",
   "description": "Application for ERM Usage platform installation for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -30,7 +30,7 @@
   "uiModules": [
     {
       "name": "folio_plugin-eusage-reports",
-      "version": "4.0.1099000000000141"
+      "version": "4.0.1099000000000149"
     },
     {
       "name": "folio_erm-usage",
@@ -38,7 +38,7 @@
     },
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "7.0.109900000000128"
+      "version": "7.0.1099000000000137"
     }
   ]
 }
