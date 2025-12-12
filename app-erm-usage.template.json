@@ -3,46 +3,53 @@
   "version": "${project.version}",
   "description": "${project.description}",
   "platform": "complete",
-  "dependencies": [
-    {
+  "dependencies":   [
+        {
       "name": "app-platform-complete",
       "version": "^2.1.0"
     },
-    {
+        {
       "name": "app-acquisitions",
       "version": "^1.0.0"
     }
   ],
-  "modules": [
-    {
+  "modules":   [
+        {
       "name": "mod-erm-usage",
-      "version": "latest"
+      "version": "5.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-erm-usage-5.1.1"
     },
-    {
+        {
       "name": "mod-erm-usage-harvester",
-      "version": "latest"
+      "version": "5.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-erm-usage-harvester-5.1.1"
     },
-    {
+        {
       "name": "mod-eusage-reports",
-      "version": "latest"
+      "version": "3.0.0",
+      "url": null
     }
   ],
-  "uiModules": [
-    {
+  "uiModules":   [
+        {
       "name": "folio_plugin-eusage-reports",
-      "version": "latest"
+      "version": "4.0.1",
+      "url": null
     },
-    {
+        {
       "name": "folio_erm-comparisons",
-      "version": "latest"
+      "version": "8.0.1",
+      "url": null
     },
-    {
+        {
       "name": "folio_erm-usage",
-      "version": "latest"
+      "version": "11.0.1",
+      "url": null
     },
-    {
+        {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "latest"
+      "version": "7.0.0",
+      "url": null
     }
   ]
 }
