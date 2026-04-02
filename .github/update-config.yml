@@ -5,7 +5,7 @@ update_config:
     - version-update
   pr_reviewers:
     - folio-org/kitfox
-    - folio-org/erm
+    - folio-org/leipzig
   ruleset:
     enabled: true
     pattern: "{0}-eureka-ci"
