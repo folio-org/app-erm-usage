@@ -6,51 +6,51 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "2.1.0",
+      "version": "^VERSION_2.1.0",
       "preRelease": "false"
     },
     {
       "name": "app-acquisitions",
-      "version": "^1.0.0",
+      "version": "^VERSION_^1.0.0",
       "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-erm-usage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-erm-usage-harvester",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-eusage-reports",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     }
   ],
   "uiModules": [
     {
       "name": "folio_plugin-eusage-reports",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_erm-comparisons",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_erm-usage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     }
   ]
