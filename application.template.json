@@ -35,7 +35,7 @@
   "uiModules": [
     {
       "name": "folio_plugin-eusage-reports",
-      "version": "^4.0.1",
+      "version": "~4.0.1",
       "preRelease": "false"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "^7.0.0",
+      "version": "~7.0.0",
       "preRelease": "false"
     }
   ]
