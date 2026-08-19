@@ -1,12 +1,12 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000011649",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000011654",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000011649",
+  "version" : "3.1.0-SNAPSHOT.100200000011654",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2067",
+    "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2080",
     "name" : "mod-erm-usage",
-    "version" : "5.3.0-SNAPSHOT.2067"
+    "version" : "5.3.0-SNAPSHOT.2080"
   }, {
     "id" : "mod-erm-usage-harvester-5.3.0-SNAPSHOT.2051",
     "name" : "mod-erm-usage-harvester",
@@ -39,7 +39,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2067",
+    "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2080",
     "name" : "erm-usage",
     "provides" : [ {
       "id" : "usage-data-providers",
@@ -348,7 +348,7 @@
       "subPermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.post", "usagedataproviders.item.put", "usagedataproviders.item.delete", "aggregatorsettings.collection.get", "aggregatorsettings.item.get", "aggregatorsettings.item.post", "aggregatorsettings.item.put", "aggregatorsettings.item.delete", "aggregatorsettings.exportcredentials.item.get", "counterreports.collection.delete", "counterreports.collection.get", "counterreports.errorcodes.collection.get", "counterreports.export.collection.get", "counterreports.export.item.get", "counterreports.download.item.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "counterreports.reportreleases.collection.get", "counterreports.reporttypes.collection.get", "counterreports.sorted.collection.get", "counterreports.upload.item.post", "customreports.collection.get", "customreports.item.get", "customreports.item.post", "customreports.item.put", "customreports.item.delete", "erm-usage.files.item.get", "erm-usage.files.item.post", "erm-usage.files.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage:5.3.0-SNAPSHOT.2067",
+      "dockerImage" : "folioci/mod-erm-usage:5.3.0-SNAPSHOT.2080",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
