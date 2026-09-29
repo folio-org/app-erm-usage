@@ -1,7 +1,7 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012154",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012155",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012154",
+  "version" : "3.1.0-SNAPSHOT.100200000012155",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
     "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2138",
@@ -17,9 +17,9 @@
     "version" : "3.1.1-SNAPSHOT.2024"
   } ],
   "uiModules" : [ {
-    "id" : "folio_erm-usage-13.0.1099000000001078",
+    "id" : "folio_erm-usage-13.0.1099000000001081",
     "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001078"
+    "version" : "13.0.1099000000001081"
   }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000239",
     "name" : "folio_plugin-eusage-reports",
@@ -810,7 +810,7 @@
       }
     }
   }, {
-    "id" : "folio_erm-usage-13.0.1099000000001078",
+    "id" : "folio_erm-usage-13.0.1099000000001081",
     "name" : "eUsage Module",
     "requires" : [ {
       "id" : "counter-reports",
