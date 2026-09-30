@@ -1,29 +1,29 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012155",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012160",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012155",
+  "version" : "3.1.0-SNAPSHOT.100200000012160",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2169",
+    "name" : "mod-erm-usage-harvester",
+    "version" : "6.0.0-SNAPSHOT.2169"
+  }, {
     "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2138",
     "name" : "mod-erm-usage",
     "version" : "5.3.0-SNAPSHOT.2138"
-  }, {
-    "id" : "mod-erm-usage-harvester-5.3.0-SNAPSHOT.2156",
-    "name" : "mod-erm-usage-harvester",
-    "version" : "5.3.0-SNAPSHOT.2156"
   }, {
     "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2024",
     "name" : "mod-eusage-reports",
     "version" : "3.1.1-SNAPSHOT.2024"
   } ],
   "uiModules" : [ {
-    "id" : "folio_erm-usage-13.0.1099000000001081",
-    "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001081"
-  }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000239",
     "name" : "folio_plugin-eusage-reports",
     "version" : "4.1.1099000000000239"
+  }, {
+    "id" : "folio_erm-usage-13.0.1099000000001081",
+    "name" : "folio_erm-usage",
+    "version" : "13.0.1099000000001081"
   }, {
     "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000175",
     "name" : "folio_plugin-find-erm-usage-data-provider",
@@ -398,14 +398,11 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-5.3.0-SNAPSHOT.2156",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2169",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
       "version" : "3.0"
-    }, {
-      "id" : "aggregator-settings",
-      "version" : "2.0"
     }, {
       "id" : "counter-reports",
       "version" : "4.0 5.0"
@@ -417,12 +414,12 @@
         "methods" : [ "GET" ],
         "pathPattern" : "/erm-usage-harvester/start",
         "permissionsRequired" : [ "ermusageharvester.start-all.get" ],
-        "modulePermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.put", "aggregatorsettings.collection.get", "aggregatorsettings.item.get", "counterreports.collection.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "mod-settings.entries.collection.get", "mod-settings.global.read.mod-erm-usage-harvester.manage" ]
+        "modulePermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.put", "counterreports.collection.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "mod-settings.entries.collection.get", "mod-settings.global.read.mod-erm-usage-harvester.manage" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/erm-usage-harvester/start/{id}",
         "permissionsRequired" : [ "ermusageharvester.start-single.get" ],
-        "modulePermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.put", "aggregatorsettings.collection.get", "aggregatorsettings.item.get", "counterreports.collection.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "mod-settings.entries.collection.get", "mod-settings.global.read.mod-erm-usage-harvester.manage" ]
+        "modulePermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.put", "counterreports.collection.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "mod-settings.entries.collection.get", "mod-settings.global.read.mod-erm-usage-harvester.manage" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/erm-usage-harvester/impl",
@@ -538,7 +535,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage-harvester:5.3.0-SNAPSHOT.2156",
+      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2169",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
