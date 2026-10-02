@@ -1,33 +1,33 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012164",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012168",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012164",
+  "version" : "3.1.0-SNAPSHOT.100200000012168",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2172",
-    "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2172"
-  }, {
     "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2138",
     "name" : "mod-erm-usage",
     "version" : "5.3.0-SNAPSHOT.2138"
+  }, {
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2172",
+    "name" : "mod-erm-usage-harvester",
+    "version" : "6.0.0-SNAPSHOT.2172"
   }, {
     "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2024",
     "name" : "mod-eusage-reports",
     "version" : "3.1.1-SNAPSHOT.2024"
   } ],
   "uiModules" : [ {
-    "id" : "folio_erm-usage-13.0.1099000000001090",
-    "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001090"
+    "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000183",
+    "name" : "folio_plugin-find-erm-usage-data-provider",
+    "version" : "7.1.1099000000000183"
   }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000239",
     "name" : "folio_plugin-eusage-reports",
     "version" : "4.1.1099000000000239"
   }, {
-    "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000175",
-    "name" : "folio_plugin-find-erm-usage-data-provider",
-    "version" : "7.1.1099000000000175"
+    "id" : "folio_erm-usage-13.0.1099000000001090",
+    "name" : "folio_erm-usage",
+    "version" : "13.0.1099000000001090"
   } ],
   "dependencies" : [ {
     "name" : "app-acquisitions",
@@ -932,17 +932,11 @@
       }
     }
   }, {
-    "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000175",
+    "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000183",
     "name" : "ERM-Usage-data-provider-finder for Stripes",
     "requires" : [ {
-      "id" : "aggregator-settings",
-      "version" : "1.0 2.0"
-    }, {
-      "id" : "erm-usage-harvester",
-      "version" : "1.1 2.0"
-    }, {
       "id" : "usage-data-providers",
-      "version" : "2.0 3.0"
+      "version" : "2.0 3.0 4.0"
     } ],
     "optional" : [ ],
     "permissionSets" : [ ],
