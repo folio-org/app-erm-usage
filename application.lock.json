@@ -1,29 +1,29 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012202",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012216",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012202",
+  "version" : "3.1.0-SNAPSHOT.100200000012216",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2162",
+    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2165",
     "name" : "mod-erm-usage",
-    "version" : "5.3.0-SNAPSHOT.2162"
+    "version" : "6.0.0-SNAPSHOT.2165"
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2172",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2178",
     "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2172"
+    "version" : "6.0.0-SNAPSHOT.2178"
   }, {
     "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2024",
     "name" : "mod-eusage-reports",
     "version" : "3.1.1-SNAPSHOT.2024"
   } ],
   "uiModules" : [ {
+    "id" : "folio_erm-usage-13.0.1099000000001121",
+    "name" : "folio_erm-usage",
+    "version" : "13.0.1099000000001121"
+  }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000239",
     "name" : "folio_plugin-eusage-reports",
     "version" : "4.1.1099000000000239"
-  }, {
-    "id" : "folio_erm-usage-13.0.1099000000001116",
-    "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001116"
   }, {
     "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000183",
     "name" : "folio_plugin-find-erm-usage-data-provider",
@@ -39,11 +39,11 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-erm-usage-5.3.0-SNAPSHOT.2162",
+    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2165",
     "name" : "erm-usage",
     "provides" : [ {
       "id" : "usage-data-providers",
-      "version" : "3.3",
+      "version" : "4.0",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/usage-data-providers",
@@ -68,38 +68,6 @@
         "methods" : [ "DELETE" ],
         "pathPattern" : "/usage-data-providers/{id}",
         "permissionsRequired" : [ "usagedataproviders.item.delete" ]
-      } ]
-    }, {
-      "id" : "aggregator-settings",
-      "version" : "2.0",
-      "handlers" : [ {
-        "methods" : [ "GET" ],
-        "pathPattern" : "/aggregator-settings",
-        "permissionsRequired" : [ "aggregatorsettings.collection.get" ]
-      }, {
-        "methods" : [ "GET" ],
-        "pathPattern" : "/aggregator-settings/{id}",
-        "permissionsRequired" : [ "aggregatorsettings.item.get" ]
-      }, {
-        "methods" : [ "POST" ],
-        "pathPattern" : "/aggregator-settings",
-        "permissionsRequired" : [ "aggregatorsettings.item.post" ]
-      }, {
-        "methods" : [ "PUT" ],
-        "pathPattern" : "/aggregator-settings/{id}",
-        "permissionsRequired" : [ "aggregatorsettings.item.put" ]
-      }, {
-        "methods" : [ "DELETE" ],
-        "pathPattern" : "/aggregator-settings/{id}",
-        "permissionsRequired" : [ "aggregatorsettings.item.delete" ]
-      }, {
-        "methods" : [ "DELETE" ],
-        "pathPattern" : "/aggregator-settings/{id}",
-        "permissionsRequired" : [ "aggregatorsettings.item.delete" ]
-      }, {
-        "methods" : [ "GET" ],
-        "pathPattern" : "/aggregator-settings/{id}/exportcredentials",
-        "permissionsRequired" : [ "aggregatorsettings.exportcredentials.item.get" ]
       } ]
     }, {
       "id" : "counter-reports",
@@ -238,30 +206,6 @@
       "displayName" : "usage data providers service types collection get",
       "description" : "Get the SUSHI service types configured in usage data providers"
     }, {
-      "permissionName" : "aggregatorsettings.collection.get",
-      "displayName" : "aggregator settings collection get",
-      "description" : "Get a collection of aggregator setting"
-    }, {
-      "permissionName" : "aggregatorsettings.item.get",
-      "displayName" : "aggregator settings item get",
-      "description" : "Get a single aggregator setting"
-    }, {
-      "permissionName" : "aggregatorsettings.item.post",
-      "displayName" : "aggregator settings item post",
-      "description" : "Create a new aggregator setting"
-    }, {
-      "permissionName" : "aggregatorsettings.item.put",
-      "displayName" : "aggregator settings item put",
-      "description" : "Edit an aggregator setting"
-    }, {
-      "permissionName" : "aggregatorsettings.item.delete",
-      "displayName" : "aggregator settings item delete",
-      "description" : "Delete an aggregator setting"
-    }, {
-      "permissionName" : "aggregatorsettings.exportcredentials.item.get",
-      "displayName" : "aggregator settings export credentials item get",
-      "description" : "Export credentials for an aggregator setting"
-    }, {
       "permissionName" : "counterreports.collection.delete",
       "displayName" : "counter reports collection delete",
       "description" : "Delete a collection of counter reports"
@@ -353,10 +297,10 @@
       "permissionName" : "eusage.all",
       "displayName" : "eusage all",
       "description" : "All permissions for the mod-erm-usage module",
-      "subPermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.post", "usagedataproviders.item.put", "usagedataproviders.item.delete", "usagedataproviders.servicetypes.collection.get", "aggregatorsettings.collection.get", "aggregatorsettings.item.get", "aggregatorsettings.item.post", "aggregatorsettings.item.put", "aggregatorsettings.item.delete", "aggregatorsettings.exportcredentials.item.get", "counterreports.collection.delete", "counterreports.collection.get", "counterreports.errorcodes.collection.get", "counterreports.export.collection.get", "counterreports.export.item.get", "counterreports.download.item.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "counterreports.reportreleases.collection.get", "counterreports.reporttypes.collection.get", "counterreports.sorted.collection.get", "counterreports.upload.item.post", "customreports.collection.get", "customreports.item.get", "customreports.item.post", "customreports.item.put", "customreports.item.delete", "erm-usage.files.item.get", "erm-usage.files.item.post", "erm-usage.files.item.delete" ]
+      "subPermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.post", "usagedataproviders.item.put", "usagedataproviders.item.delete", "usagedataproviders.servicetypes.collection.get", "counterreports.collection.delete", "counterreports.collection.get", "counterreports.errorcodes.collection.get", "counterreports.export.collection.get", "counterreports.export.item.get", "counterreports.download.item.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "counterreports.reportreleases.collection.get", "counterreports.reporttypes.collection.get", "counterreports.sorted.collection.get", "counterreports.upload.item.post", "customreports.collection.get", "customreports.item.get", "customreports.item.post", "customreports.item.put", "customreports.item.delete", "erm-usage.files.item.get", "erm-usage.files.item.post", "erm-usage.files.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage:5.3.0-SNAPSHOT.2162",
+      "dockerImage" : "folioci/mod-erm-usage:6.0.0-SNAPSHOT.2165",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -398,18 +342,18 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2172",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2178",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
-      "version" : "3.0"
+      "version" : "4.0"
     }, {
       "id" : "counter-reports",
       "version" : "4.0 5.0"
     } ],
     "provides" : [ {
       "id" : "erm-usage-harvester",
-      "version" : "2.1",
+      "version" : "3.0",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/erm-usage-harvester/start",
@@ -535,7 +479,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2172",
+      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2178",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -807,7 +751,7 @@
       }
     }
   }, {
-    "id" : "folio_erm-usage-13.0.1099000000001116",
+    "id" : "folio_erm-usage-13.0.1099000000001121",
     "name" : "eUsage Module",
     "requires" : [ {
       "id" : "counter-reports",
@@ -820,7 +764,7 @@
       "version" : "1.0"
     }, {
       "id" : "usage-data-providers",
-      "version" : "3.3"
+      "version" : "4.0"
     }, {
       "id" : "settings",
       "version" : "1.2"
@@ -829,7 +773,7 @@
       "version" : "1.0"
     }, {
       "id" : "erm-usage-harvester",
-      "version" : "2.1"
+      "version" : "3.0"
     } ],
     "optional" : [ ],
     "permissionSets" : [ {
