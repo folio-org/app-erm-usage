@@ -1,12 +1,12 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012231",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012264",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012231",
+  "version" : "3.1.0-SNAPSHOT.100200000012264",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2193",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2198",
     "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2193"
+    "version" : "6.0.0-SNAPSHOT.2198"
   }, {
     "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2172",
     "name" : "mod-erm-usage",
@@ -17,13 +17,13 @@
     "version" : "3.1.1-SNAPSHOT.2024"
   } ],
   "uiModules" : [ {
+    "id" : "folio_erm-usage-13.0.1099000000001172",
+    "name" : "folio_erm-usage",
+    "version" : "13.0.1099000000001172"
+  }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000239",
     "name" : "folio_plugin-eusage-reports",
     "version" : "4.1.1099000000000239"
-  }, {
-    "id" : "folio_erm-usage-13.0.1099000000001156",
-    "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001156"
   }, {
     "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000183",
     "name" : "folio_plugin-find-erm-usage-data-provider",
@@ -342,7 +342,7 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2193",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2198",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
@@ -479,7 +479,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2193",
+      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2198",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -751,7 +751,7 @@
       }
     }
   }, {
-    "id" : "folio_erm-usage-13.0.1099000000001156",
+    "id" : "folio_erm-usage-13.0.1099000000001172",
     "name" : "eUsage Module",
     "requires" : [ {
       "id" : "counter-reports",
