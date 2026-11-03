@@ -1,9 +1,13 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012338",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012339",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012338",
+  "version" : "3.1.0-SNAPSHOT.100200000012339",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2235",
+    "name" : "mod-erm-usage-harvester",
+    "version" : "6.0.0-SNAPSHOT.2235"
+  }, {
     "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2226",
     "name" : "mod-erm-usage",
     "version" : "6.0.0-SNAPSHOT.2226"
@@ -11,10 +15,6 @@
     "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2027",
     "name" : "mod-eusage-reports",
     "version" : "3.1.1-SNAPSHOT.2027"
-  }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2198",
-    "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2198"
   } ],
   "uiModules" : [ {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000246",
@@ -342,7 +342,7 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2198",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2235",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
@@ -392,6 +392,18 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/erm-usage-harvester/jobs/purgestale",
         "permissionsRequired" : [ "ermusageharvester.jobs.purge-stale.post" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm-usage-harvester/error-handling",
+        "permissionsRequired" : [ "ermusageharvester.settings.error-handling.get" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/erm-usage-harvester/error-handling",
+        "permissionsRequired" : [ "ermusageharvester.settings.error-handling.post" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm-usage-harvester/error-handling/defaults",
+        "permissionsRequired" : [ "ermusageharvester.settings.error-handling.defaults.get" ]
       } ]
     }, {
       "id" : "_tenant",
@@ -461,10 +473,22 @@
       "displayName" : "erm-usage-harvester purge stale jobs",
       "description" : "Purge stale harvester jobs"
     }, {
+      "permissionName" : "ermusageharvester.settings.error-handling.get",
+      "displayName" : "erm-usage-harvester get error handling settings",
+      "description" : "Read harvester error handling settings"
+    }, {
+      "permissionName" : "ermusageharvester.settings.error-handling.post",
+      "displayName" : "erm-usage-harvester post error handling settings",
+      "description" : "Save harvester error handling settings"
+    }, {
+      "permissionName" : "ermusageharvester.settings.error-handling.defaults.get",
+      "displayName" : "erm-usage-harvester get error handling defaults",
+      "description" : "Read harvester error handling defaults"
+    }, {
       "permissionName" : "ermusageharvester.all",
       "displayName" : "erm-usage-harvester all",
       "description" : "All permissions for the mod-erm-harvester module",
-      "subPermissions" : [ "ermusageharvester.start-all.get", "ermusageharvester.start-single.get", "ermusageharvester.impl.get", "ermusageharvester.periodic.get", "ermusageharvester.periodic.post", "ermusageharvester.periodic.delete", "ermusageharvester.jobs.get", "ermusageharvester.jobs.purge-finished.post", "ermusageharvester.jobs.purge-stale.post" ]
+      "subPermissions" : [ "ermusageharvester.start-all.get", "ermusageharvester.start-single.get", "ermusageharvester.impl.get", "ermusageharvester.periodic.get", "ermusageharvester.periodic.post", "ermusageharvester.periodic.delete", "ermusageharvester.jobs.get", "ermusageharvester.jobs.purge-finished.post", "ermusageharvester.jobs.purge-stale.post", "ermusageharvester.settings.error-handling.get", "ermusageharvester.settings.error-handling.post", "ermusageharvester.settings.error-handling.defaults.get" ]
     }, {
       "permissionName" : "mod-settings.global.read.mod-erm-usage-harvester.manage",
       "displayName" : "Read settings for mod-erm-usage-harvester"
@@ -479,7 +503,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2198",
+      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2235",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
