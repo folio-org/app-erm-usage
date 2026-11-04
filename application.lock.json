@@ -1,16 +1,16 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012342",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012343",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012342",
+  "version" : "3.1.0-SNAPSHOT.100200000012343",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2235",
+    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2238",
     "name" : "mod-erm-usage",
-    "version" : "6.0.0-SNAPSHOT.2235"
+    "version" : "6.0.0-SNAPSHOT.2238"
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2235",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2245",
     "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2235"
+    "version" : "6.0.0-SNAPSHOT.2245"
   }, {
     "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2027",
     "name" : "mod-eusage-reports",
@@ -39,7 +39,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2235",
+    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2238",
     "name" : "erm-usage",
     "provides" : [ {
       "id" : "usage-data-providers",
@@ -300,7 +300,7 @@
       "subPermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.post", "usagedataproviders.item.put", "usagedataproviders.item.delete", "usagedataproviders.servicetypes.collection.get", "counterreports.collection.delete", "counterreports.collection.get", "counterreports.errorcodes.collection.get", "counterreports.export.collection.get", "counterreports.export.item.get", "counterreports.download.item.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "counterreports.reportreleases.collection.get", "counterreports.reporttypes.collection.get", "counterreports.sorted.collection.get", "counterreports.upload.item.post", "customreports.collection.get", "customreports.item.get", "customreports.item.post", "customreports.item.put", "customreports.item.delete", "erm-usage.files.item.get", "erm-usage.files.item.post", "erm-usage.files.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage:6.0.0-SNAPSHOT.2235",
+      "dockerImage" : "folioci/mod-erm-usage:6.0.0-SNAPSHOT.2238",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -342,7 +342,7 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2235",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2245",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
@@ -503,7 +503,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2235",
+      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2245",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
