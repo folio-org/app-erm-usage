@@ -1,16 +1,16 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012364",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012366",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012364",
+  "version" : "3.1.0-SNAPSHOT.100200000012366",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2261",
+    "name" : "mod-erm-usage-harvester",
+    "version" : "6.0.0-SNAPSHOT.2261"
+  }, {
     "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2241",
     "name" : "mod-erm-usage",
     "version" : "6.0.0-SNAPSHOT.2241"
-  }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2257",
-    "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2257"
   }, {
     "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2027",
     "name" : "mod-eusage-reports",
@@ -342,14 +342,14 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2257",
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2261",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
       "version" : "4.0"
     }, {
       "id" : "counter-reports",
-      "version" : "4.0 5.0"
+      "version" : "5.1"
     } ],
     "provides" : [ {
       "id" : "erm-usage-harvester",
@@ -503,7 +503,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2257",
+      "dockerImage" : "folioci/mod-erm-usage-harvester:6.0.0-SNAPSHOT.2261",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
