@@ -1,20 +1,20 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012366",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012371",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012366",
+  "version" : "3.1.0-SNAPSHOT.100200000012371",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2261",
-    "name" : "mod-erm-usage-harvester",
-    "version" : "6.0.0-SNAPSHOT.2261"
+    "id" : "mod-eusage-reports-3.1.2-SNAPSHOT.2034",
+    "name" : "mod-eusage-reports",
+    "version" : "3.1.2-SNAPSHOT.2034"
   }, {
     "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2241",
     "name" : "mod-erm-usage",
     "version" : "6.0.0-SNAPSHOT.2241"
   }, {
-    "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2027",
-    "name" : "mod-eusage-reports",
-    "version" : "3.1.1-SNAPSHOT.2027"
+    "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2261",
+    "name" : "mod-erm-usage-harvester",
+    "version" : "6.0.0-SNAPSHOT.2261"
   } ],
   "uiModules" : [ {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000246",
@@ -549,7 +549,7 @@
       }
     }
   }, {
-    "id" : "mod-eusage-reports-3.1.1-SNAPSHOT.2027",
+    "id" : "mod-eusage-reports-3.1.2-SNAPSHOT.2034",
     "name" : "eusage reports",
     "requires" : [ {
       "id" : "erm",
@@ -702,7 +702,7 @@
       "subPermissions" : [ "eusage-reports.get-all", "eusage-reports-report-titles.collection.post", "eusage-reports-report-titles-from-counter.post", "eusage-reports-report-data-from-agreement.post" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-eusage-reports:3.1.1-SNAPSHOT.2027",
+      "dockerImage" : "folioci/mod-eusage-reports:3.1.2-SNAPSHOT.2034",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
