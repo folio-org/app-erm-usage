@@ -4,17 +4,17 @@
   "version" : "3.0.3",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
+    "id" : "mod-erm-usage-5.2.2",
+    "name" : "mod-erm-usage",
+    "version" : "5.2.2"
+  }, {
+    "id" : "mod-erm-usage-harvester-5.2.2",
+    "name" : "mod-erm-usage-harvester",
+    "version" : "5.2.2"
+  }, {
     "id" : "mod-eusage-reports-3.1.1",
     "name" : "mod-eusage-reports",
     "version" : "3.1.1"
-  }, {
-    "id" : "mod-erm-usage-5.2.1",
-    "name" : "mod-erm-usage",
-    "version" : "5.2.1"
-  }, {
-    "id" : "mod-erm-usage-harvester-5.2.1",
-    "name" : "mod-erm-usage-harvester",
-    "version" : "5.2.1"
   } ],
   "uiModules" : [ {
     "id" : "folio_plugin-eusage-reports-4.1.0",
@@ -39,7 +39,7 @@
     "preRelease" : "false"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-erm-usage-5.2.1",
+    "id" : "mod-erm-usage-5.2.2",
     "name" : "erm-usage",
     "provides" : [ {
       "id" : "usage-data-providers",
@@ -348,7 +348,7 @@
       "subPermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.post", "usagedataproviders.item.put", "usagedataproviders.item.delete", "aggregatorsettings.collection.get", "aggregatorsettings.item.get", "aggregatorsettings.item.post", "aggregatorsettings.item.put", "aggregatorsettings.item.delete", "aggregatorsettings.exportcredentials.item.get", "counterreports.collection.delete", "counterreports.collection.get", "counterreports.errorcodes.collection.get", "counterreports.export.collection.get", "counterreports.export.item.get", "counterreports.download.item.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "counterreports.reportreleases.collection.get", "counterreports.reporttypes.collection.get", "counterreports.sorted.collection.get", "counterreports.upload.item.post", "customreports.collection.get", "customreports.item.get", "customreports.item.post", "customreports.item.put", "customreports.item.delete", "erm-usage.files.item.get", "erm-usage.files.item.post", "erm-usage.files.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-erm-usage:5.2.1",
+      "dockerImage" : "folioorg/mod-erm-usage:5.2.2",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -390,7 +390,7 @@
       }
     }
   }, {
-    "id" : "mod-erm-usage-harvester-5.2.1",
+    "id" : "mod-erm-usage-harvester-5.2.2",
     "name" : "erm-usage-harvester",
     "requires" : [ {
       "id" : "usage-data-providers",
@@ -530,7 +530,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-erm-usage-harvester:5.2.1",
+      "dockerImage" : "folioorg/mod-erm-usage-harvester:5.2.2",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
