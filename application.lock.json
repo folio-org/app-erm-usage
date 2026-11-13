@@ -1,9 +1,13 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012374",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012378",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012374",
+  "version" : "3.1.0-SNAPSHOT.100200000012378",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
+    "id" : "mod-eusage-reports-3.1.2-SNAPSHOT.2041",
+    "name" : "mod-eusage-reports",
+    "version" : "3.1.2-SNAPSHOT.2041"
+  }, {
     "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2250",
     "name" : "mod-erm-usage",
     "version" : "6.0.0-SNAPSHOT.2250"
@@ -11,19 +15,15 @@
     "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2261",
     "name" : "mod-erm-usage-harvester",
     "version" : "6.0.0-SNAPSHOT.2261"
-  }, {
-    "id" : "mod-eusage-reports-3.1.2-SNAPSHOT.2034",
-    "name" : "mod-eusage-reports",
-    "version" : "3.1.2-SNAPSHOT.2034"
   } ],
   "uiModules" : [ {
-    "id" : "folio_erm-usage-13.0.1099000000001197",
-    "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001197"
-  }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000246",
     "name" : "folio_plugin-eusage-reports",
     "version" : "4.1.1099000000000246"
+  }, {
+    "id" : "folio_erm-usage-13.0.1099000000001197",
+    "name" : "folio_erm-usage",
+    "version" : "13.0.1099000000001197"
   }, {
     "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000183",
     "name" : "folio_plugin-find-erm-usage-data-provider",
@@ -549,7 +549,7 @@
       }
     }
   }, {
-    "id" : "mod-eusage-reports-3.1.2-SNAPSHOT.2034",
+    "id" : "mod-eusage-reports-3.1.2-SNAPSHOT.2041",
     "name" : "eusage reports",
     "requires" : [ {
       "id" : "erm",
@@ -702,7 +702,7 @@
       "subPermissions" : [ "eusage-reports.get-all", "eusage-reports-report-titles.collection.post", "eusage-reports-report-titles-from-counter.post", "eusage-reports-report-data-from-agreement.post" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-eusage-reports:3.1.2-SNAPSHOT.2034",
+      "dockerImage" : "folioci/mod-eusage-reports:3.1.2-SNAPSHOT.2041",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
