@@ -1,7 +1,7 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012392",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012399",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012392",
+  "version" : "3.1.0-SNAPSHOT.100200000012399",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
     "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2260",
@@ -17,9 +17,9 @@
     "version" : "3.1.2-SNAPSHOT.2041"
   } ],
   "uiModules" : [ {
-    "id" : "folio_erm-usage-13.0.1099000000001214",
+    "id" : "folio_erm-usage-13.0.1099000000001236",
     "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001214"
+    "version" : "13.0.1099000000001236"
   }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000246",
     "name" : "folio_plugin-eusage-reports",
@@ -775,7 +775,7 @@
       }
     }
   }, {
-    "id" : "folio_erm-usage-13.0.1099000000001214",
+    "id" : "folio_erm-usage-13.0.1099000000001236",
     "name" : "eUsage Module",
     "requires" : [ {
       "id" : "counter-reports",
@@ -886,17 +886,17 @@
     } ],
     "metadata" : {
       "stripes" : {
-        "home" : "/eusage?filters=status.active&sort=label",
-        "icons" : [ {
-          "alt" : "ERM usage statistics",
-          "name" : "app",
-          "title" : "eUsage"
-        } ],
-        "route" : "/eusage",
         "actsAs" : [ "app", "settings" ],
         "displayName" : "ui-erm-usage.meta.title",
+        "route" : "/eusage",
+        "home" : "/eusage?filters=status.active&sort=label",
+        "queryResource" : "query",
         "stripesDeps" : [ "@folio/stripes-leipzig-components" ],
-        "queryResource" : "query"
+        "icons" : [ {
+          "name" : "app",
+          "alt" : "ERM usage statistics",
+          "title" : "eUsage"
+        } ]
       }
     }
   }, {
