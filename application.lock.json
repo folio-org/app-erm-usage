@@ -1,12 +1,12 @@
 {
-  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012415",
+  "id" : "app-erm-usage-3.1.0-SNAPSHOT.100200000012418",
   "name" : "app-erm-usage",
-  "version" : "3.1.0-SNAPSHOT.100200000012415",
+  "version" : "3.1.0-SNAPSHOT.100200000012418",
   "description" : "Application for ERM Usage platform installation for Quesnelia",
   "modules" : [ {
-    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2260",
+    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2267",
     "name" : "mod-erm-usage",
-    "version" : "6.0.0-SNAPSHOT.2260"
+    "version" : "6.0.0-SNAPSHOT.2267"
   }, {
     "id" : "mod-erm-usage-harvester-6.0.0-SNAPSHOT.2271",
     "name" : "mod-erm-usage-harvester",
@@ -17,13 +17,13 @@
     "version" : "3.1.2-SNAPSHOT.2041"
   } ],
   "uiModules" : [ {
-    "id" : "folio_erm-usage-13.0.1099000000001273",
-    "name" : "folio_erm-usage",
-    "version" : "13.0.1099000000001273"
-  }, {
     "id" : "folio_plugin-eusage-reports-4.1.1099000000000246",
     "name" : "folio_plugin-eusage-reports",
     "version" : "4.1.1099000000000246"
+  }, {
+    "id" : "folio_erm-usage-13.0.1099000000001273",
+    "name" : "folio_erm-usage",
+    "version" : "13.0.1099000000001273"
   }, {
     "id" : "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000183",
     "name" : "folio_plugin-find-erm-usage-data-provider",
@@ -39,7 +39,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2260",
+    "id" : "mod-erm-usage-6.0.0-SNAPSHOT.2267",
     "name" : "erm-usage",
     "provides" : [ {
       "id" : "usage-data-providers",
@@ -300,7 +300,7 @@
       "subPermissions" : [ "usagedataproviders.collection.get", "usagedataproviders.item.get", "usagedataproviders.item.post", "usagedataproviders.item.put", "usagedataproviders.item.delete", "usagedataproviders.servicetypes.collection.get", "counterreports.collection.delete", "counterreports.collection.get", "counterreports.errorcodes.collection.get", "counterreports.export.collection.get", "counterreports.export.item.get", "counterreports.download.item.get", "counterreports.item.get", "counterreports.item.post", "counterreports.item.put", "counterreports.item.delete", "counterreports.reportreleases.collection.get", "counterreports.reporttypes.collection.get", "counterreports.sorted.collection.get", "counterreports.upload.item.post", "customreports.collection.get", "customreports.item.get", "customreports.item.post", "customreports.item.put", "customreports.item.delete", "erm-usage.files.item.get", "erm-usage.files.item.post", "erm-usage.files.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-erm-usage:6.0.0-SNAPSHOT.2260",
+      "dockerImage" : "folioci/mod-erm-usage:6.0.0-SNAPSHOT.2267",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
